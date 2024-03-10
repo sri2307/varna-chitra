@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{variables:{colorPrimary:'#3D5A80'}}}>
       <html lang="en">
         <body className={cn('font-quickSand antialiased',quickSand.variable)}>{children}</body>
       </html>
